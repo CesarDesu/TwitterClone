@@ -17,9 +17,7 @@ class Database {
 
   connect() {
     mongoose
-      .connect(
-        'mongodb+srv://upfadmin:Jm4XrAcZavB2asQ@upfuller.xv72g.mongodb.net/UpFuller?retryWrites=true&w=majority'
-      )
+      .connect('URL')
       .then(() => {
         console.log('database connection successful');
       })
